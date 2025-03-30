@@ -38,12 +38,15 @@ body {
 header {
   max-width: 1440px;
   margin: 0 auto;
-  background-image: linear-gradient(
-    180deg,
+  background: linear-gradient(
+    360deg,
+    rgba(119, 119, 119, 0),
+    rgb(17, 17, 17),
     rgb(17, 17, 17),
     rgba(119, 119, 119, 0)
   );
 }
+
 /* Nav section style */
 
 #menu {
@@ -143,7 +146,7 @@ header {
   justify-content: space-evenly;
   border-radius: 12px;
   backdrop-filter: blur(20px);
-  background-color: rgba(48, 48, 48, 0, 5);
+  background: rgba(48, 48, 48, 0.54);
   transform: translate(-115px, -160px);
   position: absolute;
 }
@@ -165,6 +168,15 @@ header {
   font-size: 16px;
   font-weight: 400;
 }
+
+#card2 {
+  transform: translate(220px, -450px);
+  background: rgba(255, 255, 255, 0.1);
+}
+
+#card2 h2 {
+  font-size: 40px;
+}
 /* media quary small device */
 
 @media screen and (max-width: 576px) {
@@ -181,5 +193,43 @@ header {
 
   .nav-bar {
     margin: 52px 20px auto 20px;
+  }
+  .hero-section {
+    flex-direction: column;
+    margin-top: 40px;
+    gap: 30px;
+  }
+  .hero-details {
+    width: 352px;
+  }
+  .hero-title {
+    font-size: 3rem;
+  }
+  #title {
+    font-size: 5rem;
+    font-weight: 100;
+  }
+  .hero-btn1 {
+    padding: 16px 15px;
+  }
+  .hero-btn2 {
+    padding: 16px 15px;
+  }
+  .hero-card1 {
+    width: 146px;
+    height: 74px;
+    transform: translate(10px, -320px);
+  }
+  .hero-card-details h2 {
+    font-size: 18px;
+  }
+  .hero-card-details p {
+    font-size: 12px;
+  }
+  #card2 {
+    transform: translate(200px, -500px);
+  }
+  #card2 h2 {
+    font-size: 30px;
   }
 }
