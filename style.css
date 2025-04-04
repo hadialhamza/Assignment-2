@@ -74,7 +74,8 @@ header {
   margin-bottom: 32px;
 }
 
-.nav-title {
+.nav-title,
+.footer-title {
   font-size: 2.25rem;
   font-weight: 800;
   font-style: italic;
@@ -336,6 +337,56 @@ header {
   color: white;
   padding: 215px 20px 20px 20px;
 }
+
+/* footer section style */
+.footer-section {
+  max-width: 1060px;
+  margin: 0 auto;
+
+  text-align: center;
+}
+.footer-container {
+  text-align: left;
+  max-width: 1060px;
+  margin: 0 auto;
+  margin-top: 100px;
+  padding-top: 50px;
+  margin-bottom: 80px;
+  justify-content: space-between;
+}
+
+.footer-title {
+  font-size: 4rem;
+  margin-bottom: 30px;
+}
+
+.footer-links {
+  gap: 80px;
+}
+.footer-link-title {
+  margin-bottom: 30px;
+  color: white;
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+.footer-link-title p {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.footer-section > p {
+  padding: 20px 0;
+}
+
+.footer-section > hr {
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  height: 1px;
+}
+
+footer {
+  background: rgba(255, 255, 255, 0.1);
+}
 /* media quary small device */
 
 @media screen and (max-width: 576px) {
@@ -433,5 +484,13 @@ header {
     width: auto;
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+  .footer-container {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .footer-links {
+    flex-direction: column;
+    margin-top: 30px;
   }
 }
