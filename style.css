@@ -51,6 +51,7 @@ body {
 header {
   max-width: 1440px;
   margin: 0 auto;
+  margin-top: 50px;
   background: linear-gradient(
     360deg,
     rgba(119, 119, 119, 0),
@@ -146,6 +147,7 @@ header {
 .hero-image {
   max-width: 350px;
   margin-right: 20px;
+  position: relative;
 }
 
 .hero-image img {
@@ -266,6 +268,74 @@ header {
   width: 100%;
   border-radius: 18px;
 }
+
+/* team section style */
+
+.our-team-section {
+  max-width: 1060px;
+  margin: 50px auto;
+  text-align: center;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.team-section-description {
+  margin: 20px 50px;
+}
+
+.team-card-container {
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: left;
+}
+
+.team-card1 {
+  background-image: url(images/trainer1.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.team-card2 {
+  background-image: url(images/trainer2.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+.team-card3 {
+  background-image: url(images/trainer3.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+.team-card4 {
+  background-image: url(images/trainer4.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+.team-card5 {
+  background-image: url(images/trainer5.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+.team-card6 {
+  background-image: url(images/trainer6.png);
+  background-size: cover;
+  background-position: center;
+  border-radius: 18px;
+}
+
+.team-card-width {
+  max-width: 326px;
+  color: white;
+  padding: 215px 20px 20px 20px;
+}
 /* media quary small device */
 
 @media screen and (max-width: 576px) {
@@ -289,20 +359,34 @@ header {
     gap: 30px;
   }
   .hero-details {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
     width: 352px;
   }
   .hero-title {
     font-size: 3rem;
   }
+  .hero-description {
+    width: 80%;
+  }
   #title {
     font-size: 5rem;
     font-weight: 100;
   }
+  .hero-button {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
   .hero-btn1 {
-    padding: 16px 15px;
+    width: 50%;
+    padding: 16px 5px;
   }
   .hero-btn2 {
-    padding: 16px 15px;
+    width: 50%;
+    padding: 16px 5px;
   }
   .hero-card1 {
     width: 146px;
@@ -316,7 +400,7 @@ header {
     font-size: 12px;
   }
   #card2 {
-    transform: translate(190px, -500px);
+    transform: translate(170px, -500px);
   }
   #card2 h2 {
     font-size: 30px;
@@ -344,5 +428,10 @@ header {
 
   .extra-mile-content h2 {
     font-size: 2rem;
+  }
+  .team-card-container {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 }
